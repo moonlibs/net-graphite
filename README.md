@@ -1,6 +1,6 @@
-# tnt-net-graphite-
 Connector to graphite/ethine
-'''lua
+
+```lua
 local g = net.graphite {
     host   = host;
     port   = 2003;          -- 2003
@@ -11,4 +11,4 @@ local g = net.graphite {
 
 g:send("res.200.put_object", 0.123, [ ts = os.time() ])
     -> my.metrics.res.200.put_object 0.123 ts
-'''
+```
