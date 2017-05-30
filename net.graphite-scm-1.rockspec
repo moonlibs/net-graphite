@@ -1,7 +1,7 @@
 package = 'net.graphite'
 version = 'scm-1'
 source  = {
-    url    = 'git@github.com:moonlibs/tnt-net-graphite.git',
+    url    = 'git://github.com/Mons/tnt-net-graphite.git',
     branch = 'master',
 }
 description = {
