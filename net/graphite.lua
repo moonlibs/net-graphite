@@ -91,7 +91,7 @@ function M.new( class, args )
 	}, class)
 
 	-- print(self.host,self.port, self.timeout)
-	local ais = socket.getaddrinfo(self.host, self.port, self.timeout, { type = 'SOCK_DGRAM', protocol = 'udp' })
+	local ais = socket.getaddrinfo(self.host, self.port, self.timeout, { type = 'SOCK_DGRAM', protocol = 'udp', family = 'AF_INET' })
 	if not ais then error("Failed to resolve "..self.host..':'..self.port) end
 
 	local sock = socket('AF_INET', 'SOCK_DGRAM', 'udp')
